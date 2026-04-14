@@ -70,6 +70,114 @@ interface PythonPageClientProps {
   idToSlug: Record<string, string>;
 }
 
+const CERTIFICATIONS = [
+  {
+    name: 'CS50 — Computer Science for Python Programming',
+    provider: 'Harvard / edX',
+    description:
+      "Le cours CS50 de Harvard + spécialisation Python. Le cours d'informatique le plus populaire au monde avec 7M+ d'inscrits.",
+    price: '518 $ USD',
+    duration: 'Auto-rythmé',
+    courses: '2 cours',
+    url: 'https://www.edx.org/certificates/professional-certificate/harvardx-computer-science-for-python-programming',
+  },
+  {
+    name: 'Introduction to Python Programming',
+    provider: 'Georgia Tech / edX',
+    description:
+      "4 cours couvrant les fondamentaux de la programmation en Python, du niveau CS1301 de Georgia Tech. Certificat professionnel vérifié.",
+    price: '756 $ USD',
+    duration: '5 mois',
+    courses: '4 cours',
+    url: 'https://www.edx.org/certificates/professional-certificate/the-georgia-institute-of-technology-introduction-to-python-programming',
+  },
+  {
+    name: 'Computer Science Fundamentals',
+    provider: 'Columbia / edX',
+    description:
+      "Fondamentaux de l'informatique par Columbia University : algorithmes, structures de données et programmation appliquée.",
+    price: '536 $ USD',
+    duration: '6 mois',
+    courses: '3 cours',
+    url: 'https://www.edx.org/certificates/professional-certificate/columbiax-computer-science-fundamentals',
+  },
+  {
+    name: 'CS50 — Computer Science for AI',
+    provider: 'Harvard / edX',
+    description:
+      "Spécialisation IA de Harvard : apprenez les algorithmes d'intelligence artificielle avec Python après CS50.",
+    price: '518 $ USD',
+    duration: 'Auto-rythmé',
+    courses: '2 cours',
+    url: 'https://www.edx.org/certificates/professional-certificate/harvardx-computer-science-for-artifical-intelligence',
+  },
+  {
+    name: 'Data Scientist Professional Certificate',
+    provider: 'Microsoft / edX',
+    description:
+      'Devenez Data Scientist certifié Microsoft : Python, statistiques, machine learning et visualisation de données.',
+    price: '536 $ USD',
+    duration: '5 semaines',
+    courses: '3 cours',
+    url: 'https://www.edx.org/certificates/professional-certificate/microsoft-data-scientist',
+  },
+  {
+    name: 'Google IT Automation with Python',
+    provider: 'Google / Coursera',
+    description:
+      "Certificat professionnel Google : automatisation IT avec Python, Git, et gestion de configuration à grande échelle.",
+    price: '49 $/mois',
+    duration: '6 mois',
+    courses: '6 cours',
+    url: 'https://www.coursera.org/professional-certificates/google-it-automation',
+  },
+];
+
+const PRACTICE_PLATFORMS = [
+  {
+    name: 'NeetCode',
+    description:
+      'Roadmaps de préparation aux entrevues tech (NeetCode 150/250), cours Python, DSA et System Design. Utilisé par des ingénieurs de Google, Meta et OpenAI.',
+    pricing: 'Gratuit / Pro',
+    url: 'https://neetcode.io/',
+  },
+  {
+    name: 'LeetCode',
+    description:
+      "La référence mondiale pour la pratique d'algorithmes et structures de données. 3000+ problèmes classés par difficulté et entreprise.",
+    pricing: 'Gratuit / Premium 35 $/mois',
+    url: 'https://leetcode.com/',
+  },
+  {
+    name: 'CodeCrafters',
+    description:
+      'Reconstruisez Redis, Git, SQLite et 8 autres systèmes réels from scratch dans votre IDE. Utilisé par des ingénieurs chez Stripe, Google et Apple.',
+    pricing: 'Premium',
+    url: 'https://codecrafters.io/',
+  },
+  {
+    name: 'Project Euler',
+    description:
+      "900+ défis mathématiques et algorithmiques à résoudre en programmation. Idéal pour renforcer la logique et l'optimisation.",
+    pricing: 'Gratuit',
+    url: 'https://projecteuler.net/',
+  },
+  {
+    name: 'HackerRank',
+    description:
+      "Pratique de code par domaine (algorithmes, SQL, IA) avec certifications gratuites reconnues par les employeurs.",
+    pricing: 'Gratuit',
+    url: 'https://www.hackerrank.com/',
+  },
+  {
+    name: 'Kaggle',
+    description:
+      'Compétitions de data science, datasets gratuits et notebooks interactifs. La plus grande communauté ML au monde.',
+    pricing: 'Gratuit',
+    url: 'https://www.kaggle.com/',
+  },
+];
+
 export default function PythonPageClient({
   mod,
   prevMod,
@@ -270,6 +378,115 @@ export default function PythonPageClient({
                   <span className="text-sm font-medium truncate group-hover:text-maple dark:group-hover:text-maple-dark transition-colors">
                     {res.name}
                   </span>
+                </div>
+                <svg
+                  className="w-5 h-5 text-[#86868B] group-hover:text-maple dark:group-hover:text-maple-dark shrink-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M7 17L17 7" />
+                  <path d="M7 7h10v10" />
+                </svg>
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Certifications reconnues */}
+        <motion.div
+          className="mb-12"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: APPLE_EASE }}
+        >
+          <h2 className="font-display text-2xl font-bold mb-2 tracking-tight">
+            Certifications reconnues
+          </h2>
+          <p className="text-sm text-[#86868B] dark:text-[#636366] mb-6">
+            Certificats vérifiés délivrés par des universités de renommée mondiale via edX et Coursera.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {CERTIFICATIONS.map((cert, i) => (
+              <motion.a
+                key={cert.name}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-[16px] bg-[#F5F5F7] dark:bg-[#1C1C1E] border border-[#D2D2D7] dark:border-[#38383A] hover:border-maple/30 dark:hover:border-maple-dark/30 transition-all duration-300 hover-lift"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, ease: APPLE_EASE, delay: i * 0.06 }}
+              >
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <span className="text-[10px] px-2 py-0.5 rounded-md bg-maple/10 dark:bg-maple-dark/15 text-maple dark:text-maple-dark uppercase tracking-wider font-bold shrink-0">
+                    {cert.provider}
+                  </span>
+                  <span className="text-sm font-bold text-maple dark:text-maple-dark whitespace-nowrap">
+                    {cert.price}
+                  </span>
+                </div>
+                <h3 className="font-display text-sm font-bold mb-1 group-hover:text-maple dark:group-hover:text-maple-dark transition-colors leading-snug">
+                  {cert.name}
+                </h3>
+                <p className="text-xs text-[#86868B] dark:text-[#636366] leading-relaxed mb-2">
+                  {cert.description}
+                </p>
+                <div className="flex items-center gap-2 text-[10px] text-[#86868B] dark:text-[#636366]">
+                  <span>{cert.duration}</span>
+                  <span>•</span>
+                  <span>{cert.courses}</span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Plateformes de pratique */}
+        <motion.div
+          className="mb-16"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: APPLE_EASE }}
+        >
+          <h2 className="font-display text-2xl font-bold mb-2 tracking-tight">
+            Plateformes de pratique
+          </h2>
+          <p className="text-sm text-[#86868B] dark:text-[#636366] mb-6">
+            Les meilleures plateformes pour pratiquer Python, préparer les entrevues tech et développer vos compétences.
+          </p>
+          <div className="space-y-3">
+            {PRACTICE_PLATFORMS.map((platform, i) => (
+              <motion.a
+                key={platform.name}
+                href={platform.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between gap-3 p-5 rounded-[16px] bg-[#F5F5F7] dark:bg-[#1C1C1E] border border-[#D2D2D7] dark:border-[#38383A] hover:border-maple/30 dark:hover:border-maple-dark/30 transition-all duration-300 group hover-lift"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, ease: APPLE_EASE, delay: i * 0.06 }}
+              >
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="font-display text-sm font-bold group-hover:text-maple dark:group-hover:text-maple-dark transition-colors">
+                      {platform.name}
+                    </span>
+                    <span className="text-[10px] px-2 py-0.5 rounded-md bg-success/10 dark:bg-success-dark/15 text-success dark:text-success-dark font-semibold uppercase tracking-wider shrink-0">
+                      {platform.pricing}
+                    </span>
+                  </div>
+                  <p className="text-xs text-[#86868B] dark:text-[#636366] leading-relaxed">
+                    {platform.description}
+                  </p>
                 </div>
                 <svg
                   className="w-5 h-5 text-[#86868B] group-hover:text-maple dark:group-hover:text-maple-dark shrink-0 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

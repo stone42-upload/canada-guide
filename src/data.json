@@ -284,6 +284,21 @@
             "name": "freeCodeCamp — Python for Beginners (YouTube)",
             "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
             "type": "vidéo"
+          },
+          {
+            "name": "NeetCode — Python for Beginners (12h)",
+            "url": "https://neetcode.io/courses",
+            "type": "cours interactif"
+          },
+          {
+            "name": "Project Euler — Défis mathématiques",
+            "url": "https://projecteuler.net/",
+            "type": "pratique"
+          },
+          {
+            "name": "Harvard CS50 — Introduction to Computer Science",
+            "url": "https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science",
+            "type": "cours certifiant"
           }
         ]
       },
@@ -315,6 +330,21 @@
             "name": "Google — Machine Learning Crash Course",
             "url": "https://developers.google.com/machine-learning/crash-course",
             "type": "cours"
+          },
+          {
+            "name": "LeetCode — Algorithmes & Data Structures",
+            "url": "https://leetcode.com/",
+            "type": "pratique"
+          },
+          {
+            "name": "NeetCode — Algorithms & DS for Beginners (25h)",
+            "url": "https://neetcode.io/courses",
+            "type": "cours interactif"
+          },
+          {
+            "name": "NeetCode 150 — Problèmes incontournables",
+            "url": "https://neetcode.io/practice/practice/neetcode150",
+            "type": "pratique"
           }
         ]
       },
@@ -346,6 +376,21 @@
             "name": "Tech With Tim — Python Automation (YouTube)",
             "url": "https://www.youtube.com/c/TechWithTim",
             "type": "vidéo"
+          },
+          {
+            "name": "CodeCrafters — Build Redis, Git, SQLite from scratch",
+            "url": "https://codecrafters.io/",
+            "type": "pratique avancée"
+          },
+          {
+            "name": "NeetCode — System Design for Beginners (10h)",
+            "url": "https://neetcode.io/courses",
+            "type": "cours interactif"
+          },
+          {
+            "name": "Project Euler — Défis algorithmiques avancés",
+            "url": "https://projecteuler.net/",
+            "type": "pratique"
           }
         ]
       }
