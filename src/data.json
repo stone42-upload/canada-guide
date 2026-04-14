@@ -1,0 +1,354 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "locale": "fr-CA",
+    "last_updated": "2026-04-13",
+    "project": "Guide Immigration Canada — Static Site"
+  },
+
+  "immigration_steps": [
+    {
+      "id": "step_01",
+      "order": 1,
+      "title": "Évaluer votre profil",
+      "description": "Identifiez votre programme idéal selon vos compétences et objectifs.",
+      "icon": "user-check",
+      "cta_label": "Commencer l'évaluation"
+    },
+    {
+      "id": "step_02",
+      "order": 2,
+      "title": "Préparer vos documents",
+      "description": "Rassemblez diplômes, relevés et preuves de fonds en un seul dossier.",
+      "icon": "folder-open",
+      "cta_label": "Voir la checklist"
+    },
+    {
+      "id": "step_03",
+      "order": 3,
+      "title": "Soumettre votre demande",
+      "description": "Créez votre compte IRCC et déposez votre candidature en ligne.",
+      "icon": "send",
+      "cta_label": "Accéder au portail"
+    },
+    {
+      "id": "step_04",
+      "order": 4,
+      "title": "Obtenir votre visa",
+      "description": "Suivez le traitement, fournissez vos données biométriques, recevez votre confirmation.",
+      "icon": "shield-check",
+      "cta_label": "Suivre ma demande"
+    },
+    {
+      "id": "step_05",
+      "order": 5,
+      "title": "Atterrir au Canada",
+      "description": "Franchissez la douane, activez votre statut et commencez votre nouvelle vie.",
+      "icon": "plane-landing",
+      "cta_label": "Guide d'arrivée"
+    }
+  ],
+
+  "universities_ranking": [
+    {
+      "rank": 1,
+      "name": "Université de Toronto",
+      "province": "Ontario",
+      "score_global_pct": "96%",
+      "is_top_robotics": true,
+      "is_top_engineering": true,
+      "excellence_statement": "Pôle mondial en intelligence artificielle avec le Vector Institute, l'Université de Toronto forme l'élite de la recherche en apprentissage profond et en systèmes autonomes. Ses laboratoires de robotique figurent parmi les plus cités au monde."
+    },
+    {
+      "rank": 2,
+      "name": "Université de la Colombie-Britannique",
+      "province": "Colombie-Britannique",
+      "score_global_pct": "94%",
+      "is_top_robotics": true,
+      "is_top_engineering": true,
+      "excellence_statement": "UBC excelle en génie biomédical et en vision par ordinateur. Son département de génie électrique et informatique est reconnu pour ses percées en robotique douce et en systèmes embarqués critiques."
+    },
+    {
+      "rank": 3,
+      "name": "Université McGill",
+      "province": "Québec",
+      "score_global_pct": "93%",
+      "is_top_robotics": true,
+      "is_top_engineering": true,
+      "excellence_statement": "McGill allie rigueur scientifique et innovation appliquée. Son Centre de machines intelligentes et ses programmes en génie aérospatial attirent des chercheurs de calibre international."
+    },
+    {
+      "rank": 4,
+      "name": "Université de Waterloo",
+      "province": "Ontario",
+      "score_global_pct": "92%",
+      "is_top_robotics": true,
+      "is_top_engineering": true,
+      "excellence_statement": "Waterloo est le berceau canadien du co-op en ingénierie. Ses partenariats directs avec Google, Tesla et BlackBerry en font un accélérateur de carrières tech sans équivalent au pays."
+    },
+    {
+      "rank": 5,
+      "name": "Université de Montréal",
+      "province": "Québec",
+      "score_global_pct": "91%",
+      "is_top_robotics": false,
+      "is_top_engineering": false,
+      "excellence_statement": "Siège du Mila, le plus grand institut de recherche en apprentissage profond au monde, l'UdeM est au cœur de la révolution IA. Yoshua Bengio y dirige des travaux qui redéfinissent les frontières du possible."
+    },
+    {
+      "rank": 6,
+      "name": "Université de l'Alberta",
+      "province": "Alberta",
+      "score_global_pct": "90%",
+      "is_top_robotics": true,
+      "is_top_engineering": true,
+      "excellence_statement": "L'Alberta Machine Intelligence Institute (Amii) positionne cette université à l'avant-garde du reinforcement learning. Ses programmes en génie pétrolier et en IA appliquée sont de calibre mondial."
+    },
+    {
+      "rank": 7,
+      "name": "Université McMaster",
+      "province": "Ontario",
+      "score_global_pct": "88%",
+      "is_top_robotics": false,
+      "is_top_engineering": true,
+      "excellence_statement": "McMaster innove par son approche problem-based learning en ingénierie. Son centre de fabrication additive et ses laboratoires de matériaux avancés forment des ingénieurs prêts pour l'industrie 4.0."
+    },
+    {
+      "rank": 8,
+      "name": "Université d'Ottawa",
+      "province": "Ontario",
+      "score_global_pct": "87%",
+      "is_top_robotics": true,
+      "is_top_engineering": false,
+      "excellence_statement": "Bilingue et stratégiquement située dans la capitale fédérale, l'Université d'Ottawa offre un accès unique aux politiques technologiques nationales et à l'écosystème de cybersécurité gouvernemental."
+    },
+    {
+      "rank": 9,
+      "name": "Université Queen's",
+      "province": "Ontario",
+      "score_global_pct": "86%",
+      "is_top_robotics": false,
+      "is_top_engineering": true,
+      "excellence_statement": "Queen's se distingue par l'excellence de son programme de génie minier et de son laboratoire d'ingénierie des systèmes complexes. Sa communauté soudée favorise un mentorat de haut niveau."
+    },
+    {
+      "rank": 10,
+      "name": "Université de Calgary",
+      "province": "Alberta",
+      "score_global_pct": "85%",
+      "is_top_robotics": true,
+      "is_top_engineering": true,
+      "excellence_statement": "Calgary investit massivement dans l'énergie propre et la robotique de terrain. Son Schulich School of Engineering est un tremplin vers les industries des ressources naturelles et de l'automatisation."
+    }
+  ],
+
+  "student_resources": {
+    "free_packs": [
+      {
+        "id": "pack_github",
+        "name": "GitHub Student Developer Pack",
+        "description": "Plus de 100 outils pro gratuits : domaines, CI/CD, cloud.",
+        "url": "https://education.github.com/pack",
+        "tags": ["dev", "cloud", "essentiel"]
+      },
+      {
+        "id": "pack_jetbrains",
+        "name": "JetBrains Student License",
+        "description": "Accès complet aux IDE professionnels : IntelliJ, PyCharm, WebStorm.",
+        "url": "https://www.jetbrains.com/community/education/",
+        "tags": ["ide", "productivité"]
+      },
+      {
+        "id": "pack_azure",
+        "name": "Microsoft Azure for Students",
+        "description": "100 $ de crédit cloud et services gratuits sans carte bancaire.",
+        "url": "https://azure.microsoft.com/fr-ca/free/students/",
+        "tags": ["cloud", "microsoft"]
+      },
+      {
+        "id": "pack_figma",
+        "name": "Figma Education",
+        "description": "Plan professionnel gratuit pour le design d'interfaces et le prototypage.",
+        "url": "https://www.figma.com/education/",
+        "tags": ["design", "ux"]
+      }
+    ],
+
+    "certifications": [
+      {
+        "id": "cert_aws",
+        "name": "AWS Educate",
+        "provider": "Amazon Web Services",
+        "description": "Parcours cloud structurés avec labs pratiques et crédits AWS.",
+        "url": "https://aws.amazon.com/education/awseducate/",
+        "level": "débutant → intermédiaire"
+      },
+      {
+        "id": "cert_coursera",
+        "name": "Coursera for Campus",
+        "provider": "Coursera",
+        "description": "Certificats Google, IBM et Meta accessibles via votre institution.",
+        "url": "https://www.coursera.org/campus",
+        "level": "tous niveaux"
+      },
+      {
+        "id": "cert_cisco",
+        "name": "Cisco Networking Academy",
+        "provider": "Cisco",
+        "description": "Formation réseau et cybersécurité avec certification CCNA préparatoire.",
+        "url": "https://www.netacad.com/",
+        "level": "débutant → avancé"
+      },
+      {
+        "id": "cert_google_cloud",
+        "name": "Google Cloud Skills Boost",
+        "provider": "Google",
+        "description": "Labs interactifs et badges de compétences sur l'infrastructure cloud Google.",
+        "url": "https://www.cloudskillsboost.google/",
+        "level": "intermédiaire"
+      }
+    ],
+
+    "recommended_repos": [
+      {
+        "id": "repo_roadmap",
+        "name": "developer-roadmap",
+        "author": "kamranahmedse",
+        "description": "Feuilles de route interactives pour développeurs, DevOps et architectes.",
+        "url": "https://github.com/kamranahmedse/developer-roadmap",
+        "stars": "300k+"
+      },
+      {
+        "id": "repo_free_prog",
+        "name": "free-programming-books",
+        "author": "EbookFoundation",
+        "description": "La plus grande collection de livres de programmation gratuits au monde.",
+        "url": "https://github.com/EbookFoundation/free-programming-books",
+        "stars": "340k+"
+      },
+      {
+        "id": "repo_system_design",
+        "name": "system-design-primer",
+        "author": "donnemartin",
+        "description": "Maîtrisez la conception de systèmes distribués à grande échelle.",
+        "url": "https://github.com/donnemartin/system-design-primer",
+        "stars": "280k+"
+      },
+      {
+        "id": "repo_public_apis",
+        "name": "public-apis",
+        "author": "public-apis",
+        "description": "Liste collective d'API gratuites pour vos projets personnels.",
+        "url": "https://github.com/public-apis/public-apis",
+        "stars": "320k+"
+      },
+      {
+        "id": "repo_awesome_python",
+        "name": "awesome-python",
+        "author": "vinta",
+        "description": "Sélection curatée des meilleurs frameworks et bibliothèques Python.",
+        "url": "https://github.com/vinta/awesome-python",
+        "stars": "220k+"
+      }
+    ]
+  },
+
+  "python_masterclass": {
+    "intro": "Trois parcours. Zéro coût. Un langage qui ouvre toutes les portes.",
+    "modules": [
+      {
+        "id": "py_beginner",
+        "level": "Débutant",
+        "title": "Les fondations Python",
+        "objective": "Maîtriser la syntaxe, les structures de données et la logique de contrôle.",
+        "duration_hours": 20,
+        "topics": [
+          "Variables, types et opérateurs",
+          "Conditions et boucles",
+          "Fonctions et modules",
+          "Manipulation de fichiers",
+          "Introduction à la POO"
+        ],
+        "resources": [
+          {
+            "name": "Python.org — Tutoriel officiel",
+            "url": "https://docs.python.org/fr/3/tutorial/",
+            "type": "documentation"
+          },
+          {
+            "name": "Automate the Boring Stuff with Python",
+            "url": "https://automatetheboringstuff.com/",
+            "type": "livre gratuit"
+          },
+          {
+            "name": "freeCodeCamp — Python for Beginners (YouTube)",
+            "url": "https://www.youtube.com/watch?v=rfscVS0vtbw",
+            "type": "vidéo"
+          }
+        ]
+      },
+      {
+        "id": "py_data_science",
+        "level": "Intermédiaire",
+        "title": "Data Science avec Python",
+        "objective": "Analyser, visualiser et modéliser des données réelles avec pandas et scikit-learn.",
+        "duration_hours": 40,
+        "topics": [
+          "NumPy et calcul matriciel",
+          "pandas — nettoyage et transformation",
+          "Visualisation avec Matplotlib et Seaborn",
+          "Introduction au Machine Learning",
+          "Projets : datasets Kaggle"
+        ],
+        "resources": [
+          {
+            "name": "Kaggle Learn — Intro to Machine Learning",
+            "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+            "type": "cours interactif"
+          },
+          {
+            "name": "Python Data Science Handbook (Jake VanderPlas)",
+            "url": "https://jakevdp.github.io/PythonDataScienceHandbook/",
+            "type": "livre gratuit"
+          },
+          {
+            "name": "Google — Machine Learning Crash Course",
+            "url": "https://developers.google.com/machine-learning/crash-course",
+            "type": "cours"
+          }
+        ]
+      },
+      {
+        "id": "py_automation",
+        "level": "Avancé",
+        "title": "Automatisation & Scripting Pro",
+        "objective": "Automatiser les tâches répétitives, scraper le web et orchestrer des workflows.",
+        "duration_hours": 30,
+        "topics": [
+          "Web scraping avec BeautifulSoup et Selenium",
+          "Automatisation de fichiers et e-mails",
+          "API REST et requêtes HTTP",
+          "Création de CLI avec Click et Typer",
+          "Scheduling et orchestration (cron, Airflow)"
+        ],
+        "resources": [
+          {
+            "name": "Real Python — Web Scraping Tutorials",
+            "url": "https://realpython.com/beautiful-soup-web-scraping-python/",
+            "type": "tutoriel"
+          },
+          {
+            "name": "GitHub — Awesome Python Scripts",
+            "url": "https://github.com/prathimacode-hub/Awesome_Python_Scripts",
+            "type": "dépôt"
+          },
+          {
+            "name": "Tech With Tim — Python Automation (YouTube)",
+            "url": "https://www.youtube.com/c/TechWithTim",
+            "type": "vidéo"
+          }
+        ]
+      }
+    ]
+  }
+}
